@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="380" viewBox="0 0 880 380" role="img" aria-labelledby="title">
+  <title id="title">engram terminal demo: save a memory, then inject it as context</title>
+  <desc>An animated terminal: engram add saves a release note, then engram context returns it as a memory block. Static viewers see the finished session.</desc>
+  <defs>
+    <linearGradient id="termBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C1322"/>
+      <stop offset="1" stop-color="#080D18"/>
+    </linearGradient>
+    <linearGradient id="termEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2A3757"/>
+      <stop offset="1" stop-color="#161E31"/>
+    </linearGradient>
+    <clipPath id="type1"><rect x="50" y="78" width="560" height="24">
+      <animate attributeName="width" values="0;0;560;560" keyTimes="0;0.04;0.22;1" dur="10s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="type2"><rect x="50" y="218" width="380" height="24">
+      <animate attributeName="width" values="0;0;380;380" keyTimes="0;0.38;0.49;1" dur="10s" repeatCount="indefinite"/>
+    </rect></clipPath>
+  </defs>
+
+  <rect x="0.75" y="0.75" width="878.5" height="378.5" rx="18" fill="url(#termBg)" stroke="url(#termEdge)"/>
+
+  <path d="M18 46V18a18 18 0 0 1 18-18h808a18 18 0 0 1 18 18v28z" fill="#101828"/>
+  <line x1="1" y1="46" x2="879" y2="46" stroke="#1C2740"/>
+  <circle cx="28" cy="23" r="6" fill="#F87171"/>
+  <circle cx="48" cy="23" r="6" fill="#FBBF24"/>
+  <circle cx="68" cy="23" r="6" fill="#34D399"/>
+  <text x="90" y="27.5" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12" fill="#5D6B8A">engram — zsh</text>
+
+  <g id="stage" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15.5">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.86;0.94;1" dur="10s" repeatCount="indefinite"/>
+
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.008;0.014;1" dur="10s" repeatCount="indefinite"/>
+      <text x="28" y="96" fill="#818CF8">$</text>
+    </g>
+
+    <g clip-path="url(#type1)">
+      <text x="50" y="96" fill="#E6E9F5" textLength="560" lengthAdjust="spacing">engram add "Releases run pnpm build, then rsync" --tags deploy</text>
+    </g>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.014;0.02;0.234;0.24;1" dur="10s" repeatCount="indefinite"/>
+      <rect x="50" y="82" width="8" height="18" fill="#818CF8">
+        <animate attributeName="x" values="50;50;610;610" keyTimes="0;0.04;0.22;1" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.238;0.244;1" dur="10s" repeatCount="indefinite"/>
+      <text x="50" y="126" fill="#34D399">+ saved mvevxbqm9dce</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.252;0.258;1" dur="10s" repeatCount="indefinite"/>
+      <text x="50" y="156" fill="#93A1BC">Releases run pnpm build, then rsync</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.266;0.272;1" dur="10s" repeatCount="indefinite"/>
+      <text x="50" y="186" fill="#5B6B8C">project:engram · decision · imp 3</text>
+    </g>
+
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.356;0.362;1" dur="10s" repeatCount="indefinite"/>
+      <text x="28" y="236" fill="#818CF8">$</text>
+    </g>
+
+    <g clip-path="url(#type2)">
+      <text x="50" y="236" fill="#E6E9F5" textLength="380" lengthAdjust="spacing">engram context "how do I reach prod-01"</text>
+    </g>
+
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.486;0.492;1" dur="10s" repeatCount="indefinite"/>
+      <rect x="430" y="222" width="8" height="18" fill="#818CF8">
+        <animate attributeName="x" values="50;50;430;430" keyTimes="0;0.38;0.49;1" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.506;0.512;1" dur="10s" repeatCount="indefinite"/>
+      <text x="50" y="266" fill="#22D3EE">&lt;memory&gt;</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.52;0.526;1" dur="10s" repeatCount="indefinite"/>
+      <text x="50" y="296" fill="#C7D2FE">- [decision] Releases run pnpm build, then rsync</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.534;0.54;1" dur="10s" repeatCount="indefinite"/>
+      <text x="50" y="326" fill="#22D3EE">&lt;/memory&gt;</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+{
+  "name": "engram",
+  "version": "0.1.0",
+  "description": "One memory for all your agents. Local, portable, MCP-native.",
+  "keywords": [
+    "ai-agent",
+    "memory",
+    "mcp",
+    "claude-code",
+    "codex",
+    "cursor",
+    "llm",
+    "context",
+    "knowledge"
+  ],
+  "license": "MIT",
+  "author": "PHclaw",
+  "homepage": "https://github.com/PHclaw/engram",
+  "repository": "github:PHclaw/engram",
+  "bugs": "https://github.com/PHclaw/engram/issues",
+  "bin": {
+    "engram": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "assets",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "test": "npm run build && node scripts/smoke.js",
+    "smoke": "node scripts/smoke.js",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}

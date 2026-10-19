@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title">
+  <title id="title">engram — one memory for all your agents</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090E1C"/>
+      <stop offset="0.55" stop-color="#0B1122"/>
+      <stop offset="1" stop-color="#080D19"/>
+    </linearGradient>
+    <radialGradient id="glowIndigo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6366F1" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#AEB9FF"/>
+    </linearGradient>
+    <linearGradient id="cardEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2C3A63"/>
+      <stop offset="1" stop-color="#182137"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1A2340" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="320" fill="url(#bg)"/>
+  <rect width="1280" height="320" fill="url(#grid)" opacity="0.4"/>
+  <ellipse cx="120" cy="26" rx="360" ry="240" fill="url(#glowIndigo)"/>
+  <ellipse cx="1190" cy="316" rx="340" ry="220" fill="url(#glowCyan)"/>
+
+  <g fill="none" stroke="#818CF8" stroke-width="1.5" opacity="0.75">
+    <path d="M86 108 L120 74 L156 100 L192 68"/>
+    <path d="M120 74 L132 118 L156 100"/>
+    <path d="M132 118 L170 124"/>
+  </g>
+  <g fill="#A5B4FC">
+    <circle cx="86" cy="108" r="4"/>
+    <circle cx="120" cy="74" r="5"/>
+    <circle cx="156" cy="100" r="4"/>
+    <circle cx="192" cy="68" r="3.5"/>
+  </g>
+  <g fill="#67E8F9">
+    <circle cx="132" cy="118" r="4.5"/>
+    <circle cx="170" cy="124" r="3.5"/>
+  </g>
+
+  <text x="72" y="200" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Inter, sans-serif" font-size="88" font-weight="700" letter-spacing="-3" fill="url(#ink)">engram</text>
+  <text x="74" y="238" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Inter, sans-serif" font-size="22" fill="#A6B0C9">One memory for all your agents.</text>
+
+  <g font-family="ui-sans-serif, -apple-system, 'Segoe UI', Inter, sans-serif" font-size="13" fill="#AEB9D3">
+    <rect x="72" y="256" width="106" height="30" rx="15" fill="#111A2E" stroke="#27324F"/>
+    <text x="125" y="275" text-anchor="middle">BM25 + CJK</text>
+    <rect x="188" y="256" width="104" height="30" rx="15" fill="#111A2E" stroke="#27324F"/>
+    <text x="240" y="275" text-anchor="middle">MCP native</text>
+    <rect x="302" y="256" width="152" height="30" rx="15" fill="#111A2E" stroke="#27324F"/>
+    <text x="378" y="275" text-anchor="middle">zero dependencies</text>
+  </g>
+
+  <g>
+    <rect x="720" y="48" width="488" height="200" rx="16" fill="#0C1524" stroke="url(#cardEdge)"/>
+    <circle cx="744" cy="72" r="5" fill="#F87171"/>
+    <circle cx="762" cy="72" r="5" fill="#FBBF24"/>
+    <circle cx="780" cy="72" r="5" fill="#34D399"/>
+    <text x="800" y="76" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12" fill="#5D6B8A">engram — zsh</text>
+    <line x1="720" y1="92" x2="1208" y2="92" stroke="#1B2540"/>
+    <g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13.5">
+      <text x="744" y="120" fill="#E6E9F5"><tspan fill="#818CF8">$</tspan> engram context "deploy"</text>
+      <text x="744" y="146" fill="#22D3EE">&lt;memory&gt;</text>
+      <text x="744" y="172" fill="#C7D2FE">- [decision] Releases run pnpm build,</text>
+      <text x="744" y="196" fill="#C7D2FE">  then rsync to prod-01</text>
+      <text x="744" y="220" fill="#22D3EE">&lt;/memory&gt;</text>
+    </g>
+  </g>
+</svg>
